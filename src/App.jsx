@@ -1,10 +1,18 @@
+import Button from "./Button";
+import Hero from "./Hero";
+import Navigation from "./Navigation";
 
-import Navbar from "./navbar";
 function App() {
+  const name = "Manupa";
+  const cartCount = 2;
+
   return (
     <div>
-      <Navbar/>
-      
+      <Navigation name={name} cartCount={cartCount} />
+      <Hero />
+      <div className="p-4">
+        <Button>Buy Now</Button>
+      </div>
     </div>
   );
 }
