@@ -22,7 +22,17 @@ function Navigation(props) {
             </div>
           </a>
         </div>
-        <p>Hi, {props.name}</p>
+        {/* <p>Hi, {props.name}</p> */}
+
+        {props.name ? (
+          <p>Hi, {props.name}</p>
+        ) : (
+          <div className="flex gap-4">
+            <a href="/signin">Sign In</a>
+            <a href="/signup">Sign Up</a>
+          </div>
+        )}
+        
       </div>
     </nav>
   );
