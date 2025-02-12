@@ -29,6 +29,7 @@
 
 // export default Hero;
 
+import { Button } from "@/components/ui/button";
 
 function Hero() {
   return (
@@ -45,12 +46,15 @@ function Hero() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quos
             suscipit est autem quia? Voluptatem?
           </p>
-          <a
+          {/* <a
             href="/shop"
             className="px-4 py-2 text-white font-medium bg-black rounded-md inline-block w-fit"
           >
             Shop Now
-          </a>
+          </a> */}
+          <Button className="w-fit" asChild>
+            <a to="/shop">Shop Now</a>
+          </Button>
         </div>
         <div className="relative">
           <img
