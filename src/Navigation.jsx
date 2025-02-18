@@ -1,8 +1,9 @@
+// 
 import { ShoppingCart } from "lucide-react";
 
 function Navigation(props) {
   return (
-    <nav className="flex items-center justify-between p-8 mx-16">
+    <nav className="flex items-center justify-between py-8 px-8">
       <div className="flex gap-x-16">
         <a className="font-semibold text-3xl" href="/">
           Mebius
@@ -22,17 +23,7 @@ function Navigation(props) {
             </div>
           </a>
         </div>
-        {/* <p>Hi, {props.name}</p> */}
-
-        {props.name ? (
-          <p>Hi, {props.name}</p>
-        ) : (
-          <div className="flex gap-4">
-            <a href="/signin">Sign In</a>
-            <a href="/signup">Sign Up</a>
-          </div>
-        )}
-        
+        <p>Hi, {props.name}</p>
       </div>
     </nav>
   );
