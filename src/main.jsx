@@ -17,6 +17,7 @@ import RootLayout from "./layouts/root.layout";
 import AccountPage from "./pages/account.page";
 import PaymentPage from "./pages/payment.page";
 import CompletePage from "./pages/complete.page";
+import AdminProductCreatePage from "./pages/admin-product-create.page";
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 
@@ -37,6 +38,7 @@ createRoot(document.getElementById("root")).render(
             <Route path="/shop/checkout" element={<CheckoutPage />} />
             <Route path="/shop/payment" element={<PaymentPage />} />
             <Route path="/shop/complete" element={<CompletePage />} />
+            <Route path="/admin/products/create" element={<AdminProductCreatePage />} />
           </Route>
           <Route path="/sign-in" element={<SignInPage />} />
           <Route path="/sign-up" element={<SignUpPage />} />
